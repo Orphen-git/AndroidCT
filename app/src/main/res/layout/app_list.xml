@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<com.facebook.drawee.view.SimpleDraweeView
+    android:id="@+id/_imageApp"
+    android:layout_width="70dp"
+    android:layout_height="70dp"/>
+
+    <TextView
+        android:id="@+id/_nomApp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Nom de l'application"
+        android:layout_toRightOf="@+id/_imageApp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/_genreApp"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Genre"
+        android:layout_alignLeft="@+id/_nomApp"
+        android:layout_below="@+id/_nomApp"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/_anneeApp"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Année de sortie"
+        android:layout_alignEnd="@+id/_nomApp"
+        android:layout_below="@+id/_nomApp"
+        android:gravity="center_vertical"/>
+
+
+
+
+</RelativeLayout>
